@@ -4,7 +4,7 @@ body {
     background: #f5f5f5;
 }
 
-/* HEADER (Fix + Sticky + Premium) */
+/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
@@ -15,6 +15,12 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+.tagline {
+    font-size: 12px;
+    color: #ccc;
+    margin: 0;
 }
 
 .header nav a {
@@ -29,7 +35,7 @@ body {
     color: orange;
 }
 
-/* HERO (Upgrade with background image) */
+/* HERO */
 .hero {
     text-align: center;
     padding: 100px 20px;
@@ -77,7 +83,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* CARD (Premium Upgrade) */
 .card {
     padding: 25px;
     background: white;
@@ -105,7 +110,6 @@ body {
     flex-wrap: wrap;
 }
 
-/* IMAGE HOVER EFFECT */
 .gallery img {
     width: 100%;
     max-width: 320px;
@@ -115,34 +119,6 @@ body {
 
 .gallery img:hover {
     transform: scale(1.05);
-}
-
-/* PROJECT CARD */
-.project-card {
-    width: 300px;
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    text-align: left;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    transition: 0.3s;
-}
-
-.project-card img {
-    width: 100%;
-}
-
-.project-card h3 {
-    margin: 10px;
-}
-
-.project-card p {
-    margin: 10px;
-    font-size: 14px;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
 }
 
 /* CTA */
@@ -161,7 +137,7 @@ footer {
     color: white;
 }
 
-/* WHATSAPP BUTTON */
+/* WHATSAPP */
 .whatsapp {
     position: fixed;
     bottom: 20px;
@@ -179,7 +155,7 @@ footer {
     transform: scale(1.1);
 }
 
-/* ANIMATION (Fade-in) */
+/* ANIMATION */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -191,7 +167,7 @@ footer {
     transform: translateY(0);
 }
 
-/* MOBILE RESPONSIVE */
+/* MOBILE */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;

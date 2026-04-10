@@ -17,3 +17,18 @@ window.addEventListener('scroll', showOnScroll);
 
 // Run on page load
 window.addEventListener('load', showOnScroll);
+
+// AUTO IMAGE SLIDER
+let slides = document.querySelectorAll(".slides img");
+let index = 0;
+
+function showSlide() {
+    slides.forEach((img) => img.classList.remove("active"));
+    slides[index].classList.add("active");
+
+    index = (index + 1) % slides.length;
+}
+
+setInterval(showSlide, 3000);
+
+
